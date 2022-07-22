@@ -9,16 +9,18 @@ import UIKit
 
 class SeventhViewController: UIViewController {
     
-    var hasMemory: Bool = false
+    var hasNoMemory: Bool = true
     
     @IBOutlet weak var leaveAloneButton: UIButton!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var snoopAroundButton: UIButton!
+    @IBOutlet weak var continueButton2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(hasMemory)
+        print(hasNoMemory)
         continueButton.isHidden = true
+        continueButton2.isHidden = true
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "seesaw")!)
 
         // Do any additional setup after loading the view.
@@ -27,7 +29,7 @@ class SeventhViewController: UIViewController {
         continueButton.isHidden = false
         snoopAroundButton.isHidden = true
         leaveAloneButton.isHidden = true
-        hasMemory = false
+//        hasMemory = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,8 +38,11 @@ class SeventhViewController: UIViewController {
         
         if segue.destination is MessageViewController {
         let messageVC = segue.destination as? MessageViewController
-            messageVC!.hasMemory2 = hasMemory
-        }
+            messageVC!.hasMemory2 = hasNoMemory
+        } else if segue.destination is NinthViewController {
+            let ninthVC = segue.destination as? NinthViewController
+            ninthVC!.hasNoMemory2 = hasNoMemory
+            }
         
 //        let messageVC = segue.destination as! MessageViewController
 //
@@ -49,8 +54,11 @@ class SeventhViewController: UIViewController {
     
 
     @IBAction func snoopAround(_ sender: Any) {
-        hasMemory = true
-        print(hasMemory)
+        hasNoMemory = false
+        print(hasNoMemory)
+        continueButton2.isHidden = false
+        leaveAloneButton.isHidden = true
+        snoopAroundButton.isHidden = true
         
     }
     

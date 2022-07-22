@@ -9,12 +9,12 @@ import UIKit
 
 class MessageViewController: UIViewController {
     
-    var hasMemory2: Bool? = false
+    var hasMemory2: Bool? = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueRoom")!)
-        print(hasMemory2 ?? false)
+        print(hasMemory2 ?? true)
 //        print(SeventhViewController().hasMemory)
 
         // Do any additional setup after loading the view.

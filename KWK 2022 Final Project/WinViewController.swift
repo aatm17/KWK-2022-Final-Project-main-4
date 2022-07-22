@@ -8,10 +8,28 @@
 import UIKit
 
 class WinViewController: UIViewController {
+    
+    @IBOutlet weak var winLabel: UILabel!
+    @IBOutlet weak var loseLabel: UILabel!
+    
+    var hasNoMemory4: Bool? = true
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueRoom")!)
+        
+        if hasNoMemory4! {
+            self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueRoom")!)
+            winLabel.isHidden = true
+            print(hasNoMemory4 ?? true)
+        } else if !hasNoMemory4! {
+            self.view.backgroundColor = UIColor(patternImage: UIImage(named: "doctor")!)
+            loseLabel.isHidden = true
+            print(hasNoMemory4 ?? true)
+            
+        }
+        
+
         // Do any additional setup after loading the view.
     }
     

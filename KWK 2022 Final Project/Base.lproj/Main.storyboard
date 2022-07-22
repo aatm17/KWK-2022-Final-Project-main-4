@@ -16,14 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Blue Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-ad-k4G">
-                                <rect key="frame" x="44" y="114" width="340" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzL-JY-z7D">
-                                <rect key="frame" x="109" y="755" width="171" height="44"/>
+                                <rect key="frame" x="129" y="755" width="171" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="asD-vM-S27"/>
                                 </constraints>
@@ -36,8 +30,13 @@
                                     <segue destination="dsN-8w-L6z" kind="show" id="ej2-cQ-hBf"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-3e-biJ">
-                                <rect key="frame" x="123" y="201" width="182" height="555"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-BZ-ZG7">
+                                <rect key="frame" x="133" y="364" width="163" height="402"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="RTT-QN-5YO">
+                                <rect key="frame" x="94" y="135" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,21 +44,15 @@
                         <color key="tintColor" red="0.19215686269999999" green="0.08235294118" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZzL-JY-z7D" secondAttribute="bottom" constant="63" id="2ys-hw-6Cf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Dm-ad-k4G" secondAttribute="trailing" constant="44" id="3yT-Lo-qm3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ddx-3e-biJ" secondAttribute="trailing" constant="123" id="HS2-R9-2nj"/>
-                            <constraint firstItem="3Dm-ad-k4G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="aWz-vW-OWf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZzL-JY-z7D" secondAttribute="trailing" constant="133" id="bUq-Ea-zWC"/>
                             <constraint firstItem="ZzL-JY-z7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="ciH-xR-n3V"/>
-                            <constraint firstItem="Ddx-3e-biJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="dVl-uG-QKc"/>
-                            <constraint firstItem="3Dm-ad-k4G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="frj-eB-yU3"/>
-                            <constraint firstItem="Ddx-3e-biJ" firstAttribute="top" secondItem="3Dm-ad-k4G" secondAttribute="bottom" constant="50" id="yAy-Rh-Zfz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PL5-iK-xZB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="70.982142857142847"/>
+            <point key="canvasLocation" x="18.22429906542056" y="70.626349892008648"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="6TA-L9-nNg">
@@ -387,10 +380,6 @@ Brown Bear: “Hey, I can help you get out of here!”
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monster1" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-mm-bjx">
-                                <rect key="frame" x="204" y="508" width="150" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counter: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihy-EH-icw">
                                 <rect key="frame" x="50" y="397" width="314" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -399,7 +388,7 @@ Brown Bear: “Hey, I can help you get out of here!”
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="wos-er-b0L">
-                                <rect key="frame" x="0.0" y="508" width="240" height="128"/>
+                                <rect key="frame" x="-28" y="516" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yi-CN-EtP">
@@ -468,6 +457,10 @@ Brown Bear: “You’re at this playground for a reason, you have a unique power
                                     <action selector="button1:" destination="1vj-bd-l3s" eventType="touchUpInside" id="bJ6-bX-s4H"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monster1" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-mm-bjx">
+                                <rect key="frame" x="111" y="392" width="317" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="waX-bY-EXt"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -497,7 +490,7 @@ Brown Bear: “You’re at this playground for a reason, you have a unique power
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ce-XI-CTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3766.666666666667" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="3765.4205607476633" y="-46.652267818574515"/>
         </scene>
         <!--Eigth View Controller-->
         <scene sceneID="Ptp-Vl-VYQ">
@@ -655,8 +648,8 @@ Brown Bear: “Wait! You should leave that alone, someone might see us!”
                                 <nil key="highlightedColor"/>
                                 <string key="userLabel">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="Rr9-Sj-r1g">
-                                <rect key="frame" x="94" y="393" width="240" height="365"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="HYi-wE-0am">
+                                <rect key="frame" x="74" y="393" width="280" height="397"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -823,7 +816,7 @@ Brown Bear: “Woah, you might not want to go snooping around, we don’t want t
                                     <color key="baseBackgroundColor" red="0.19215686269999999" green="0.08235294118" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="kCr-t4-w1d" kind="show" id="tp8-u4-lcF"/>
+                                    <segue destination="THA-7P-O4u" kind="show" id="cBM-ws-FDb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWQ-Ja-Bkg">
@@ -853,7 +846,7 @@ Brown Bear: “Woah, you might not want to go snooping around, we don’t want t
                                 <string key="userLabel">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE6-bn-zp9">
-                                <rect key="frame" x="37" y="397" width="341" height="31"/>
+                                <rect key="frame" x="0.0" y="397" width="341" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click here to fight the monster!">
@@ -863,8 +856,19 @@ Brown Bear: “Woah, you might not want to go snooping around, we don’t want t
                                     <action selector="fightButton:" destination="YeQ-ZK-ekR" eventType="touchUpInside" id="zo6-X4-OJn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bear1" translatesAutoresizingMaskIntoConstraints="NO" id="bqn-DT-Mxb">
-                                <rect key="frame" x="94" y="425" width="240" height="241"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMB-Ah-3FC">
+                                <rect key="frame" x="44" y="425" width="326" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="character1" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-lh-FdA">
+                                <rect key="frame" x="0.0" y="538" width="174" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bear1" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-zK-ae4">
+                                <rect key="frame" x="146" y="274" width="329" height="492"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -886,6 +890,13 @@ Brown Bear: “Woah, you might not want to go snooping around, we don’t want t
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r3R-yS-8Vs"/>
+                    <connections>
+                        <outlet property="bearMonster" destination="Z4X-zK-ae4" id="Jea-VV-dHJ"/>
+                        <outlet property="button1" destination="Dyf-1R-u4T" id="c45-ZC-qq0"/>
+                        <outlet property="button2" destination="GC5-UU-65e" id="4F7-Pe-2vy"/>
+                        <outlet property="label1" destination="nE6-bn-zp9" id="ACe-JQ-g4J"/>
+                        <outlet property="label2" destination="oMB-Ah-3FC" id="xrc-mX-d1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6Z-CJ-OL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1004,7 +1015,25 @@ Unknown - “I hope you’re feeling better now, don’t worry everything will b
                                 <buttonConfiguration key="configuration" style="filled" title="Return to home">
                                     <color key="baseBackgroundColor" red="0.19215686269999999" green="0.08235294118" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tp7-sX-4Se"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-5F-0fQ">
+                                <rect key="frame" x="20" y="159" width="388" height="226"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="226" id="MGN-29-HUE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="226" id="PEo-Vf-Do0"/>
+                                </constraints>
+                                <string key="text">*The bear manifests before you, its threatening aura suffocating you. It stands ready to fight.*
+*...but do you really want to confront it? You find no reason to sacrifice yourself and this playground is comforting. *You’d rather play with new friends and toys, so you turn around and walk back with the blue teddy bear in hand…*
+</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <string key="userLabel">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YaL-Fi-5Y8"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1014,11 +1043,18 @@ Unknown - “I hope you’re feeling better now, don’t worry everything will b
                             <constraint firstItem="ERx-OI-5tW" firstAttribute="leading" secondItem="YaL-Fi-5Y8" secondAttribute="leading" constant="25" id="EUE-Dt-Xt7"/>
                             <constraint firstItem="5Rl-8k-lFH" firstAttribute="top" secondItem="M9B-4a-NO5" secondAttribute="bottom" constant="40" id="FCT-t8-p4Q"/>
                             <constraint firstItem="5Rl-8k-lFH" firstAttribute="leading" secondItem="YaL-Fi-5Y8" secondAttribute="leading" constant="20" id="REc-v6-zUD"/>
+                            <constraint firstItem="ZMP-5F-0fQ" firstAttribute="top" secondItem="M9B-4a-NO5" secondAttribute="bottom" constant="40" id="WIf-Wx-e9q"/>
                             <constraint firstItem="YaL-Fi-5Y8" firstAttribute="trailing" secondItem="ERx-OI-5tW" secondAttribute="trailing" constant="25" id="WnR-gp-Qy5"/>
                             <constraint firstItem="YaL-Fi-5Y8" firstAttribute="trailing" secondItem="5Rl-8k-lFH" secondAttribute="trailing" constant="20" id="wxX-je-tur"/>
+                            <constraint firstItem="ZMP-5F-0fQ" firstAttribute="leading" secondItem="YaL-Fi-5Y8" secondAttribute="leading" constant="20" id="ybg-vf-mAY"/>
+                            <constraint firstItem="YaL-Fi-5Y8" firstAttribute="trailing" secondItem="ZMP-5F-0fQ" secondAttribute="trailing" constant="20" id="yfT-Fe-MDL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ftl-Im-tsq"/>
+                    <connections>
+                        <outlet property="loseLabel" destination="ZMP-5F-0fQ" id="9dV-oI-ZXv"/>
+                        <outlet property="winLabel" destination="5Rl-8k-lFH" id="5G7-9k-SMH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAB-q2-Pov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1055,7 +1091,7 @@ Unknown - “I hope you’re feeling better now, don’t worry everything will b
                                     <color key="baseBackgroundColor" red="0.19215686269999999" green="0.08235294118" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="JOR-N1-QDi" kind="show" id="7KE-rL-NgH"/>
+                                    <action selector="snoopAround:" destination="0Lm-Hv-Pcc" eventType="touchUpInside" id="ske-SR-eGN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-nN-Fpe">
@@ -1064,6 +1100,15 @@ Unknown - “I hope you’re feeling better now, don’t worry everything will b
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" imagePlacement="trailing" title="Continue "/>
                                 <connections>
                                     <segue destination="koe-De-plB" kind="show" id="fLy-WF-6Mr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="576-wj-pBB">
+                                <rect key="frame" x="290" y="861" width="127" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" imagePlacement="trailing" title="Continue "/>
+                                <connections>
+                                    <segue destination="JOR-N1-QDi" kind="show" id="7SO-nt-SE2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-ZN-cx0">
@@ -1121,13 +1166,14 @@ Brown Bear: “Woah, you might not want to go snooping around, we don’t want t
                     <navigationItem key="navigationItem" id="uCX-of-aSx"/>
                     <connections>
                         <outlet property="continueButton" destination="PsJ-nN-Fpe" id="hcL-8y-YWk"/>
+                        <outlet property="continueButton2" destination="576-wj-pBB" id="M4G-oI-JdC"/>
                         <outlet property="leaveAloneButton" destination="pwC-X8-a5a" id="wk0-um-bEa"/>
                         <outlet property="snoopAroundButton" destination="Kng-vE-Cwp" id="OPx-sr-kce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oa8-Ej-8FM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4731.884057971015" y="-458.03571428571428"/>
+            <point key="canvasLocation" x="4731.3084112149527" y="-458.09935205183587"/>
         </scene>
         <!--Ninth View Controller-->
         <scene sceneID="lA4-O4-3t6">
@@ -1286,8 +1332,8 @@ Brown Bear: “Wait! You should leave that alone, someone might see us!”
                                 <nil key="highlightedColor"/>
                                 <string key="userLabel">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="qhi-dI-RsV">
-                                <rect key="frame" x="84" y="393" width="261" height="342"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-P3-txv">
+                                <rect key="frame" x="118" y="356" width="193" height="402"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1313,11 +1359,12 @@ Brown Bear: “Wait! You should leave that alone, someone might see us!”
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="cBM-ws-FDb"/>
         <segue reference="ttc-3v-AJT"/>
-        <segue reference="Gwh-2R-eYZ"/>
+        <segue reference="lOz-8l-2Nh"/>
         <segue reference="KDl-Yw-e04"/>
         <segue reference="i69-pd-GWd"/>
-        <segue reference="bm0-lr-18A"/>
+        <segue reference="5qw-bX-oYt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
@@ -1329,5 +1376,6 @@ Brown Bear: “Wait! You should leave that alone, someone might see us!”
         <image name="monster1" width="828" height="775"/>
         <image name="phone" width="1284" height="2778"/>
         <image name="picture" width="1284" height="2778"/>
+        <image name="title" width="247" height="148"/>
     </resources>
 </document>
